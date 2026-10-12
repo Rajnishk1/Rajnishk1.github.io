@@ -3,180 +3,288 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rajnish Kumar | Software Engineer</title>
-<meta name="description" content="Rajnish Kumar, Software Engineer building high-performance trading and banking systems in Java.">
+<title>Rajnish Kumar | Software Engineer, Java and Trading Systems</title>
+<meta name="description" content="Portfolio of Rajnish Kumar, Software Engineer with 5+ years of experience building scalable banking and trading applications with Java, Spring Boot, Kafka and microservices.">
+<meta name="author" content="Rajnish Kumar">
+<meta name="theme-color" content="#14112b">
+<link rel="canonical" href="https://rajnishk1.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%236a4cff'/%3E%3Ctext x='32' y='42' font-size='28' font-weight='700' text-anchor='middle' font-family='sans-serif' fill='white'%3ERK%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rajnish Kumar | Software Engineer">
+<meta property="og:description" content="Java, Spring Boot, Kafka and trading systems. Building scalable banking, trading and AI-powered applications.">
+<meta property="og:url" content="https://rajnishk1.github.io/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Rajnish Kumar","jobTitle":"Software Engineer","url":"https://rajnishk1.github.io/","worksFor":{"@type":"Organization","name":"Lloyds Technology Centre"},"alumniOf":"VTU Belgaum","knowsAbout":["Java","Spring Boot","Kafka","Microservices","Trading Systems","IBM MQ"],"sameAs":["https://github.com/Rajnishk1","https://www.linkedin.com/in/rajnish-kumar-5053561b7/"]}</script>
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
-:root{--bg:#f5f7fb;--surface:#fff;--ink:#0f1830;--muted:#56607a;--accent:#2a55e5;--hot:#ff6b3d;--line:#dbe1ee;--night:#0b1228;--max:1040px}
-@media(prefers-color-scheme:dark){:root{--bg:#080d1d;--surface:#111a35;--ink:#eaf0ff;--muted:#9aa6c4;--accent:#86a4ff;--line:#223052;--night:#050913}}
+:root{--bg:#f6f5fb;--surf:#fff;--ink:#14112b;--mut:#5e5a78;--acc:#6a4cff;--mint:#0fa88f;--line:#e1def0;--side:#14112b;--sideink:#efecff;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d0b1c;--surf:#17142e;--ink:#efecff;--mut:#a29fc2;--acc:#9b86ff;--mint:#35d6bb;--line:#2a2650;--side:#090818}}
+:root[data-theme=dark]{--bg:#0d0b1c;--surf:#17142e;--ink:#efecff;--mut:#a29fc2;--acc:#9b86ff;--mint:#35d6bb;--line:#2a2650;--side:#090818}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;font:17px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
-a{color:var(--accent)}
-:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;justify-content:space-between;height:62px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;color:var(--ink)}
-.rk{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--hot);color:#1a0b05;font-size:13px}
-nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
-nav ul a{display:block;padding:8px 14px;border-radius:8px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
-nav ul a:hover,nav ul a.on{color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
-#menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit}
-@media(max-width:800px){#menu{display:block}
- nav ul{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line);padding:8px}
- nav ul.open{display:flex}}
-.hero{background:var(--night);color:#eaf0ff;padding:112px 0 104px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,61,.28),transparent 65%)}
-.hero .wrap{position:relative;max-width:var(--max)}.hero .wrap>div{max-width:720px}
-.hi{color:#ff9d7a;font-weight:700;margin:0 0 10px}
-.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);line-height:1;letter-spacing:-.04em;margin:0 0 20px}
-.hero .role{font-size:1.25rem;color:#d4def8;margin:0 0 14px;font-weight:600}
-.hero p.d{color:#a9b5d6;max-width:46ch;margin:0 0 30px}
-.btn{display:inline-block;padding:12px 24px;border-radius:10px;font:inherit;font-weight:700;text-decoration:none;margin:0 10px 10px 0;border:2px solid transparent;cursor:pointer}
-.btn.p{background:var(--hot);color:#1a0b05}
-.btn.g{border-color:#46568a;color:#eaf0ff}
-@media(max-width:860px){.hero{padding:56px 0}}
-.strip{background:var(--surface);border-bottom:1px solid var(--line)}
-.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
-.strip .wrap>div{padding:22px 16px;border-left:1px solid var(--line)}
-.strip .wrap>div:first-child{border-left:0;padding-left:0}
-.strip b{display:block;font-size:1.35rem;color:var(--accent);line-height:1.2}
-.strip span{color:var(--muted);font-size:14px}
-@media(max-width:700px){.strip .wrap{grid-template-columns:1fr 1fr}.strip .wrap>div:nth-child(3){border-left:0;padding-left:0}}
-section{padding:72px 0;border-top:1px solid var(--line)}
-.strip+section{border-top:0}
-h2{font-size:2rem;letter-spacing:-.03em;margin:0 0 30px}
-.lead{font-size:1.2rem;max-width:62ch;margin:0 0 16px}
-.sub{color:var(--muted);max-width:62ch;margin:0}
-.job{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:26px 0;border-top:1px solid var(--line)}
-.job:first-of-type{border-top:0;padding-top:0}
-.job time{color:var(--muted);font-size:15px;font-weight:600}
-.job h3{margin:0 0 2px;font-size:1.2rem}
-.job .co{color:var(--accent);font-weight:600;margin:0 0 8px}
-.job p{margin:0;color:var(--muted);max-width:64ch}
-@media(max-width:700px){.job{grid-template-columns:1fr;gap:6px}}
-.certs{margin-top:28px}.certs h3{margin:0 0 12px;font-size:1.2rem}.cert{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;padding:14px 18px;margin-bottom:10px;background:var(--surface);border:1px solid var(--line);border-radius:10px;color:var(--ink);text-decoration:none}a.cert:hover{border-color:var(--accent)}.cert span{color:var(--accent);font-weight:600}
-.edu{margin-top:12px;padding:16px 20px;border-left:4px solid var(--hot);background:var(--surface);border-radius:0 10px 10px 0}
-.skillrow{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:18px 0;border-top:1px solid var(--line);align-items:start}
-.skillrow:first-of-type{border-top:0}
-.skillrow h3{margin:0;font-size:1rem;color:var(--muted)}
-.tags{display:flex;flex-wrap:wrap;gap:8px}
-.tags span{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:4px 12px;font-size:15px;font-weight:500}
-@media(max-width:700px){.skillrow{grid-template-columns:1fr;gap:8px}}
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
-.card:hover{transform:translateY(-4px);border-color:var(--accent)}
-.card small{color:var(--hot);font-weight:700;font-size:13px}
-.card h3{margin:6px 0 8px;font-size:1.2rem}
-.card p{color:var(--muted);margin:0 0 16px;flex:1}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;font:17px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;background:var(--bg);color:var(--ink);display:grid;grid-template-columns:300px 1fr}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--mint);color:#04211b;padding:8px 14px;border-radius:8px;z-index:50;font-weight:700}.skip:focus{left:8px}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--acc),var(--mint));z-index:40}
+.side{background:var(--side);color:var(--sideink);position:sticky;top:0;height:100vh;padding:28px 24px;display:flex;flex-direction:column;gap:18px;overflow-y:auto}
+.av{width:72px;height:72px;border-radius:20px;background:linear-gradient(135deg,var(--acc),var(--mint));display:grid;place-items:center;font-size:26px;font-weight:800;color:#fff}
+.side h1{font-size:1.4rem;margin:0;letter-spacing:-.02em;line-height:1.2}
+.side .t{margin:2px 0 0;color:#b9b5d6;font-size:15px}
+.side .loc{margin:0;color:#8f8bb3;font-size:14px}
+.side nav ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.side nav a{display:block;padding:8px 12px;border-radius:10px;color:#c9c5e6;text-decoration:none;font-weight:600;font-size:15px}
+.side nav a:hover{background:rgba(255,255,255,.08)}
+.side nav a.on{background:var(--acc);color:#fff}
+.soc{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.soc a,.soc button{border:1px solid #3a3566;color:var(--sideink);background:none;border-radius:10px;padding:6px 12px;font:inherit;font-size:14px;text-decoration:none;cursor:pointer}
+.soc a:hover,.soc button:hover{border-color:var(--mint);color:var(--mint)}
+.mbtn{display:none}
+@media(max-width:900px){
+ body{display:block}
+ .side{position:sticky;height:auto;padding:12px 18px;flex-direction:row;flex-wrap:wrap;align-items:center;gap:12px;z-index:30;overflow:visible}
+ .av{width:40px;height:40px;border-radius:12px;font-size:16px}
+ .side h1{font-size:1.05rem;flex:1}
+ .side .t,.side .loc{display:none}
+ .mbtn{display:block;background:none;border:1px solid #3a3566;color:var(--sideink);border-radius:10px;padding:6px 14px;font:inherit}
+ .side nav{display:none;width:100%}.side nav.open{display:block}
+ .soc{margin:0;width:100%;display:none}.soc.open{display:flex}}
+main{min-width:0}
+.sec{padding:84px clamp(20px,5vw,64px);border-top:1px solid var(--line);max-width:1000px}
+#home{border-top:0;min-height:88vh;display:flex;flex-direction:column;justify-content:center}
+.hi{color:var(--mint);font-weight:700;margin:0 0 8px}
+#home h2{font-size:clamp(2.6rem,7vw,4.8rem);line-height:1;letter-spacing:-.04em;margin:0 0 14px}
+.type{font-size:clamp(1.2rem,3vw,1.7rem);font-weight:700;color:var(--acc);min-height:2.2em;margin:0 0 16px}
+.type i{display:inline-block;width:3px;height:1.1em;background:var(--acc);margin-left:3px;vertical-align:-3px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.d{color:var(--mut);max-width:56ch;margin:0 0 28px;font-size:1.1rem}
+.btn{display:inline-block;padding:12px 24px;border-radius:12px;font:inherit;font-weight:700;text-decoration:none;margin:0 10px 10px 0;border:2px solid var(--acc);cursor:pointer}
+.btn.p{background:var(--acc);color:#fff}.btn.g{background:none;color:var(--acc)}
+.btn:hover{transform:translateY(-2px)}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:36px;max-width:700px}
+.nums div{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:16px}
+.nums b{display:block;font-size:1.9rem;color:var(--acc);line-height:1.1}
+.nums span{color:var(--mut);font-size:14px}
+h2.h{font-size:2rem;letter-spacing:-.03em;margin:0 0 8px}
+.kick{color:var(--mut);margin:0 0 30px;max-width:60ch}
+.lead{font-size:1.2rem;max-width:62ch;margin:0 0 14px}
+.sub{color:var(--mut);max-width:64ch;margin:0 0 14px}
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:24px}
+.hl div{background:var(--surf);border:1px solid var(--line);border-left:4px solid var(--mint);border-radius:12px;padding:14px 16px}
+.hl b{display:block}.hl span{color:var(--mut);font-size:15px}
+.tl{border-left:3px solid var(--line);margin-left:6px}
+.job{position:relative;padding:0 0 34px 28px}
+.job::before{content:"";position:absolute;left:-10px;top:6px;width:17px;height:17px;border-radius:50%;background:var(--acc);border:4px solid var(--bg)}
+.job time{color:var(--mut);font-size:14px;font-weight:700}
+.job h3{margin:2px 0 0;font-size:1.25rem}.job .co{color:var(--acc);font-weight:700;margin:0 0 6px}
+.job ul{margin:0;padding-left:20px;color:var(--mut)}.job li{margin-bottom:3px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.tabs button{background:var(--surf);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 16px;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:6px 14px;font-weight:600;font-size:15px;transition:transform .2s,border-color .2s}
+.chip:hover{transform:translateY(-3px);border-color:var(--mint)}
+.js .chip.pop{animation:pop .35s both;animation-delay:calc(var(--i)*25ms)}
+@keyframes pop{from{opacity:0;transform:scale(.85)}}
+[hidden]{display:none!important}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-5px);border-color:var(--acc);box-shadow:0 16px 34px rgba(60,40,160,.16)}
+.card small{color:var(--mint);font-weight:700;font-size:13px}
+.card h3{margin:6px 0 8px;font-size:1.2rem}.card p{color:var(--mut);margin:0 0 14px;flex:1}
 .card a{font-weight:700}
-.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
-.steps li::before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--bg);font-weight:800;margin-bottom:12px}
-.steps h3{margin:0 0 4px;font-size:1.1rem}
-.steps p{margin:0 0 10px;color:var(--muted);font-size:15px}
-.steps code{display:block;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:13px/1.5 ui-monospace,Consolas,monospace}
-.cta{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;background:var(--night);color:#eaf0ff;border-radius:18px;padding:40px}
-.cta h3{margin:0 0 8px;font-size:1.7rem}
-.cta p{margin:0;color:#aab6d6;max-width:42ch}
-.cta .btn{margin:0 10px 0 0}
-footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+.box{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:22px}
+.box h3{margin:0 0 8px;font-size:1.15rem}.box p{margin:0 0 6px;color:var(--mut)}.box b{color:var(--ink)}
+.ai{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;list-style:none;padding:0;margin:0;counter-reset:s}
+.ai li{counter-increment:s;background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:20px}
+.ai li::before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--mint);color:#04211b;font-weight:800;margin-bottom:10px}
+.ai h3{margin:0 0 4px;font-size:1.1rem}.ai p{margin:0 0 8px;color:var(--mut);font-size:15px}
+.ai code{display:block;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:13px/1.5 ui-monospace,Consolas,monospace}
+form{display:grid;gap:14px;max-width:560px;margin-top:24px}
+label{font-weight:600;font-size:15px}
+input,textarea{width:100%;margin-top:4px;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--surf);color:var(--ink);font:inherit}
+.note{color:var(--mut);font-size:14px;margin:0}
+footer{padding:30px clamp(20px,5vw,64px);border-top:1px solid var(--line);color:var(--mut);font-size:15px}
+footer p{margin:0 0 4px}footer .q{color:var(--ink);font-weight:600}
+#top{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;border:0;background:var(--acc);color:#fff;font-size:20px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;z-index:30}
+#top.show{opacity:1;pointer-events:auto}
+.js .fi{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.js .fi.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .fi{opacity:1!important;transform:none!important;transition:none!important}.chip.pop,.type i{animation:none!important}.card,.chip,.btn{transition:none}}
+@media print{.side,#top,#bar,.tabs,form,.btn{display:none!important}body{display:block}.js .fi{opacity:1!important;transform:none!important}.sec{padding:20px 0;break-inside:avoid}}
+
+.av{position:relative;overflow:hidden}.av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#home{position:relative;isolation:isolate;overflow:hidden}
+#home::before,#home::after{content:"";position:absolute;border-radius:50%;z-index:-1;pointer-events:none}
+#home::before{width:520px;height:520px;right:-140px;top:-120px;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 38%,transparent),transparent 65%)}
+#home::after{width:420px;height:420px;left:-160px;bottom:-140px;background:radial-gradient(circle,color-mix(in srgb,var(--mint) 30%,transparent),transparent 65%)}
+.now{display:flex;gap:12px;align-items:center;background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:12px 16px;max-width:560px;margin-top:8px}
+.now b{display:block;font-size:15px}.now span:not(.dot){color:var(--mut);font-size:14px}
+.dot{flex:none;width:10px;height:10px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 var(--mint);animation:pl 2s infinite}
+@keyframes pl{70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.marq{overflow:hidden;background:var(--surf);border-block:1px solid var(--line);padding:16px 0}
+.mt{display:flex;width:max-content;animation:mq 45s linear infinite}.marq:hover .mt{animation-play-state:paused}
+.mg{display:flex;gap:40px;padding-right:40px}.mg span{font-weight:700;color:var(--mut);white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+.tg{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
+.tg span{background:color-mix(in srgb,var(--acc) 12%,transparent);color:var(--acc);border-radius:999px;padding:2px 10px;font-size:13px;font-weight:700}
+.card .tg{margin:0 0 12px}.card h3{margin:0 0 6px}
+details{margin:0 0 12px;color:var(--mut);font-size:15px}
+summary{cursor:pointer;font-weight:700;color:var(--ink)}
+details ul{margin:8px 0 0;padding-left:20px}
+.sw{display:flex;gap:8px;width:100%}.sw button{width:26px;height:26px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0}
+.sw button:hover,.sw button[aria-pressed=true]{border-color:#fff}
+@media(prefers-reduced-motion:reduce){.mt,.dot{animation:none}.marq{overflow-x:auto}}
+@media print{.marq,.sw{display:none!important}}
+.card .meta{color:var(--mint);font-weight:700;font-size:13px;margin:0 0 10px;flex:none}
+#pgrid{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
 </style>
 </head>
 <body>
-<header><div class="wrap"><nav aria-label="Main">
- <a class="logo" href="#home"><span class="rk">RK</span>Rajnish Kumar</a>
- <button id="menu" aria-expanded="false" aria-controls="links">Menu</button>
- <ul id="links">
-  <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li>
-  <li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li>
-  <li><a href="#process">How it was built</a></li><li><a href="#contact">Contact</a></li>
- </ul></nav></div></header>
-
-<main>
-<div class="hero" id="home"><div class="wrap">
- <div>
-  <p class="hi">Hi, I'm</p>
-  <h1>Rajnish Kumar</h1>
-  <p class="role">Software Engineer, Java and microservices</p>
-  <p class="d">I build scalable applications for banking and sales &amp; trading, and I'm exploring how AI agents speed up development. This site was built with them.</p>
-  <a class="btn p" href="#projects">See my work</a><a class="btn g" href="#contact">Contact me</a>
+<a class="skip" href="#main">Skip to content</a>
+<div id="bar"></div>
+<header class="side">
+ <div class="av"><span>RK</span><img src="photo.jpg" alt="Rajnish Kumar" width="72" height="72" onerror="this.remove()"></div>
+ <div><h1>Rajnish Kumar</h1><p class="t">Software Engineer</p><p class="loc">Hyderabad, India</p></div>
+ <button class="mbtn" id="mbtn" aria-expanded="false" aria-controls="nav">Menu</button>
+ <nav id="nav" aria-label="Main"><ul>
+  <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li>
+  <li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#credentials">Education &amp; certs</a></li>
+  <li><a href="#ai">AI build</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+ <div class="soc" id="soc">
+  <a href="https://github.com/Rajnishk1">GitHub</a><a href="https://www.linkedin.com/in/rajnish-kumar-5053561b7/">LinkedIn</a>
+  <a href="mailto:rajnish151293@gmail.com">Email</a>
+  <div class="sw" role="group" aria-label="Accent color"><button data-c="#7c5cff" style="background:#7c5cff" aria-label="Violet"></button><button data-c="#2f7bff" style="background:#2f7bff" aria-label="Blue"></button><button data-c="#0fa88f" style="background:#0fa88f" aria-label="Green"></button><button data-c="#f26b3a" style="background:#f26b3a" aria-label="Orange"></button></div>
+  <button id="theme" aria-label="Toggle dark and light mode">◐ Theme</button><button id="print">Save as PDF</button>
  </div>
-</div></div>
+</header>
 
-<div class="strip"><div class="wrap">
- <div><b>5+ years</b><span>Software engineering</span></div>
- <div><b>~2.5 years</b><span>Zero-regression delivery</span></div>
- <div><b>Java 8/11/17</b><span>Oracle Certified SE 11</span></div>
- <div><b>Hyderabad</b><span>India</span></div>
-</div></div>
-
-<section id="about"><div class="wrap">
- <h2>About me</h2>
- <p class="lead">I build enterprise applications in Java, Spring Boot and Quarkus, with hands-on experience in high-frequency market data using OneTick, Kafka and IBM MQ.</p>
- <p class="sub">At Lloyds Technology Center I work on dynamic pricing and microservices for the Sales &amp; Trading lab. I also work with React, DevOps tooling and production support, and I'm exploring GenAI and GitHub Copilot.</p>
-</div></section>
-
-<section id="experience"><div class="wrap">
- <h2>Experience</h2>
- <div class="job"><time>Dec 2023 to present</time><div><h3>Software Engineer</h3><p class="co">Lloyds Technology Center, Hyderabad</p><p>Built trading applications for dynamic pricing and high-performance microservices. Deployed scalable Docker services, added error handling and Kafka retry mechanisms to the Integration Apps Framework, and supported risk analysis and workflow automation.</p></div></div>
- <div class="job"><time>Nov 2021 to Dec 2022</time><div><h3>Software Engineer</h3><p class="co">Larsen &amp; Toubro, Pune</p><p>Built a customer database and workflow engine for credit-card approvals on the ABSA Banking project, using Java 8, Spring Boot and React.</p></div></div>
- <div class="job"><time>Apr 2020 to Jun 2021</time><div><h3>Software Engineer</h3><p class="co">Mindset IT Solutions, Pune</p><p>Developed a full-stack Employee Management System with React and Spring Boot, including search by salary range and employee attributes.</p></div></div>
- <div class="edu"><b>B.E. in Electronics &amp; Communication Engineering</b>, VTU Belgaum, 2016</div>
-<div class="certs">
-  <h3>Certifications</h3>
-  <a class="cert" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=04A415C4D39DCD6C4AD4795D7E1C5D23074E0DE0080DE0D29579764176479F8B" target="_blank" rel="noopener"><b>Oracle Certified Professional, Java SE 11 Developer (1Z0-819)</b><span>Verify on Oracle</span></a>
-  <div class="cert"><b>Certified Java Programming, W3Docs</b></div>
+<main id="main">
+<section class="sec" id="home">
+ <p class="hi">Hello, I'm</p>
+ <h2>Rajnish Kumar</h2>
+ <p class="type" aria-live="off"><span id="ty">Software Engineer</span><i></i></p>
+ <p class="d">Software Engineer with 5+ years of experience building scalable banking and trading applications. Specialized in Java, Microservices, Kafka, IBM MQ, Docker, cloud-native solutions, monitoring, and automation.</p>
+ <div><a class="btn p" href="#projects">View Projects</a><a class="btn g" href="#contact">Contact Me</a></div>
+ <div class="now"><span class="dot" aria-hidden="true"></span><div><b>Currently at Lloyds Technology Centre, Hyderabad</b><span>Dynamic pricing, Kafka microservices and monitoring tooling</span></div></div>
+ <div class="nums">
+  <div><b class="num" data-to="5" data-suf="+">5+</b><span>Years of experience</span></div>
+  <div><b class="num" data-to="2.5" data-dec="1" data-pre="~">~2.5</b><span>Years zero-regression</span></div>
+  <div><b class="num" data-to="3">3</b><span>Companies</span></div>
+  <div><b class="num" data-to="6">6</b><span>Projects</span></div>
  </div>
-</div></section>
+</section>
 
-<section id="skills"><div class="wrap">
- <h2>Skills and technologies</h2>
- <div class="skillrow"><h3>Languages</h3><div class="tags"><span>Java 8/11/17</span><span>Python</span><span>SQL</span><span>C++</span></div></div>
- <div class="skillrow"><h3>Backend</h3><div class="tags"><span>Spring Boot</span><span>Spring MVC</span><span>Spring Data JPA</span><span>Quarkus</span><span>Hibernate</span><span>Flask</span></div></div>
- <div class="skillrow"><h3>Frontend</h3><div class="tags"><span>React</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Thymeleaf</span></div></div>
- <div class="skillrow"><h3>Messaging and data</h3><div class="tags"><span>OneTick</span><span>Kafka</span><span>IBM MQ</span><span>MongoDB</span><span>MySQL</span><span>Oracle</span></div></div>
- <div class="skillrow"><h3>DevOps and AI</h3><div class="tags"><span>Docker</span><span>Jenkins</span><span>Maven</span><span>Git</span><span>Grafana</span><span>Prometheus</span><span>Splunk</span><span>GenAI</span><span>GitHub Copilot</span></div></div>
- <div class="skillrow"><h3>Cloud and testing</h3><div class="tags"><span>AWS</span><span>JUnit</span><span>Mockito</span><span>Postman</span></div></div>
-</div></section>
+<div class="marq" aria-label="Technologies I work with"><div class="mt"><div class="mg"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>IBM MQ</span><span>OneTick</span><span>Docker</span><span>React</span><span>Quarkus</span><span>Splunk</span><span>Grafana</span><span>Prometheus</span><span>AWS</span><span>Generative AI</span><span>GitHub Copilot</span></div><div class="mg" aria-hidden="true"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>IBM MQ</span><span>OneTick</span><span>Docker</span><span>React</span><span>Quarkus</span><span>Splunk</span><span>Grafana</span><span>Prometheus</span><span>AWS</span><span>Generative AI</span><span>GitHub Copilot</span></div></div></div>
 
-<section id="projects"><div class="wrap">
- <h2>Projects</h2>
- <div class="projects">
-  <article class="card"><small>Java, Kafka, Docker</small><h3>Integration Apps Framework</h3><p>Framework-level optimizations with advanced error handling and Kafka retry mechanisms for trading apps.</p></article>
-  <article class="card"><small>Java 8, Spring Boot, React</small><h3>Credit-card approval engine</h3><p>Customer database and workflow engine that streamlines credit-card approvals for ABSA Banking.</p></article>
-  <article class="card"><small>React, Spring Boot</small><h3>Employee Management System</h3><p>Full-stack app with fast search across large datasets by salary range and employee attributes.</p></article>
-  <article class="card"><small>HTML, CSS, AI agents</small><h3>This website</h3><p>Designed, coded and debugged by prompting AI agents, then deployed on GitHub Pages.</p><a href="https://github.com/Rajnishk1/Rajnishk1.github.io">View source</a></article>
+<section class="sec fi" id="about">
+ <h2 class="h">About me</h2>
+ <p class="lead">I have experience in banking, financial services, and trading applications.</p>
+ <p class="sub">I work at Lloyds Technology Centre, Hyderabad, using Java, Spring Boot, Kafka, IBM MQ, OneTick, React and Docker. I also handle production support, monitoring and automation, and I'm interested in Generative AI and GitHub Copilot.</p>
+ <p class="sub"><b style="color:var(--ink)">Currently exploring:</b> Generative AI, GitHub Copilot and AI-assisted development.</p>
+ <div class="hl">
+  <div><b>5+ years</b><span>Software engineering</span></div><div><b>Banking &amp; Trading</b><span>Domain expertise</span></div>
+  <div><b>Oracle Certified</b><span>Java SE 11 Developer</span></div><div><b>Microservices</b><span>and Event-Driven Architecture</span></div>
  </div>
-</div></section>
+</section>
 
-<section id="process"><div class="wrap">
- <h2>How this site was built</h2>
- <ol class="steps">
+<section class="sec fi" id="experience">
+ <h2 class="h">Experience</h2><p class="kick">Where I've worked and what I've built.</p>
+ <div class="tl">
+  <div class="job"><time>Dec 2023 to present</time><h3>Software Engineer</h3><p class="co">Lloyds Technology Centre, Hyderabad</p><ul><li>Dynamic pricing and trading applications</li><li>Java, Spring Boot and Kafka microservices</li><li>Monitoring and operational tooling</li><li>Exception handling and retry frameworks</li><li>Automation and production support</li><li>Cross-functional collaboration</li></ul><div class="tg"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>IBM MQ</span><span>OneTick</span><span>Docker</span></div></div>
+  <div class="job"><time>Nov 2021 to Dec 2022</time><h3>Software Engineer</h3><p class="co">Larsen &amp; Toubro, Pune</p><ul><li>ABSA Banking project</li><li>Credit Card Approval Engine</li><li>Java 8, Spring Boot, React</li></ul><div class="tg"><span>Java 8</span><span>Spring Boot</span><span>React</span></div></div>
+  <div class="job"><time>Apr 2020 to Jun 2021</time><h3>Software Engineer</h3><p class="co">Mindset IT Solutions, Pune</p><ul><li>Employee Management System</li><li>React and Spring Boot</li></ul><div class="tg"><span>React</span><span>Spring Boot</span></div></div>
+ </div>
+</section>
+
+<section class="sec fi" id="skills">
+ <h2 class="h">Skills and technologies</h2><p class="kick">Tap a category to filter.</p>
+ <div class="tabs" id="stabs" role="group" aria-label="Skill categories"></div>
+ <div class="chips" id="chips">
+  <span class="chip" data-c="Languages">Java 8/11/17</span><span class="chip" data-c="Languages">Python</span><span class="chip" data-c="Languages">SQL</span><span class="chip" data-c="Languages">C++</span>
+  <span class="chip" data-c="Backend">Spring Boot</span><span class="chip" data-c="Backend">Spring MVC</span><span class="chip" data-c="Backend">Spring Data JPA</span><span class="chip" data-c="Backend">Hibernate</span><span class="chip" data-c="Backend">Quarkus</span><span class="chip" data-c="Backend">Flask</span>
+  <span class="chip" data-c="Frontend">React</span><span class="chip" data-c="Frontend">JavaScript</span><span class="chip" data-c="Frontend">HTML5</span><span class="chip" data-c="Frontend">CSS3</span><span class="chip" data-c="Frontend">Thymeleaf</span>
+  <span class="chip" data-c="Messaging">Kafka</span><span class="chip" data-c="Messaging">IBM MQ</span><span class="chip" data-c="Messaging">OneTick</span>
+  <span class="chip" data-c="Databases">Oracle</span><span class="chip" data-c="Databases">MySQL</span><span class="chip" data-c="Databases">MongoDB</span>
+  <span class="chip" data-c="DevOps">Docker</span><span class="chip" data-c="DevOps">Jenkins</span><span class="chip" data-c="DevOps">Maven</span><span class="chip" data-c="DevOps">Git</span><span class="chip" data-c="DevOps">Grafana</span><span class="chip" data-c="DevOps">Prometheus</span><span class="chip" data-c="DevOps">Splunk</span>
+  <span class="chip" data-c="Cloud and AI">AWS</span><span class="chip" data-c="Cloud and AI">Generative AI</span><span class="chip" data-c="Cloud and AI">GitHub Copilot</span>
+  <span class="chip" data-c="Testing">JUnit</span><span class="chip" data-c="Testing">Mockito</span><span class="chip" data-c="Testing">Postman</span>
+ </div>
+</section>
+
+<section class="sec fi" id="projects">
+ <h2 class="h">Projects</h2><p class="kick">Filter by area.</p>
+ <div class="tabs" id="ptabs" role="group" aria-label="Project categories"></div>
+ <div class="grid" id="pgrid">
+  <article class="card" data-c="Backend"><h3>Integration Apps Framework</h3><p class="meta">Lloyds Technology Centre</p><p>A Java framework that integration applications run on, deployed as Docker services. I worked on framework-level optimizations, adding advanced error handling and Kafka retry mechanisms so message processing is more resilient. Monitoring is built in so teams can see how the apps behave.</p><div class="tg"><span>Java</span><span>Kafka</span><span>Docker</span></div><details><summary>Highlights</summary><ul><li>Advanced error handling</li><li>Kafka retry mechanisms</li><li>Framework-level optimizations</li><li>Monitoring</li></ul></details></article>
+  <article class="card" data-c="Trading"><h3>Dynamic Pricing Platform</h3><p class="meta">Lloyds Technology Centre, Sales &amp; Trading lab</p><p>Trading applications focused on dynamic pricing, built on a high-performance microservice architecture. They support real-time pricing workflows for trading operations. Releases were delivered with zero regression for nearly 2.5 years.</p><div class="tg"><span>Java</span><span>Spring Boot</span><span>Microservices</span><span>Kafka</span></div><details><summary>Highlights</summary><ul><li>Real-time pricing workflows</li><li>High-performance microservices</li><li>Zero-regression delivery for ~2.5 years</li></ul></details></article>
+  <article class="card" data-c="Monitoring"><h3>Service &amp; Kafka Monitoring Platform</h3><p class="meta">Lloyds Technology Centre</p><p>A monitoring tool built with Flask and Python that uses Splunk and Kafka. It runs automated health checks on services and raises alerts, so problems are spotted early and production support is faster.</p><div class="tg"><span>Flask</span><span>Python</span><span>Splunk</span><span>Kafka</span></div><details><summary>Highlights</summary><ul><li>Automated health checks</li><li>Alerting and monitoring</li><li>Supports production support</li></ul></details></article>
+  <article class="card" data-c="Banking"><h3>Credit Card Approval Engine</h3><p class="meta">Larsen &amp; Toubro, ABSA Banking project</p><p>A customer database and workflow engine that streamlines credit-card approval workflows for the ABSA Banking project. I built the backend components with Java 8 and Spring Boot and improved internal banking tools with React-based UI changes.</p><div class="tg"><span>Java 8</span><span>Spring Boot</span><span>React</span></div><details><summary>Highlights</summary><ul><li>Customer database</li><li>Approval workflow engine</li><li>React UI improvements</li></ul></details></article>
+  <article class="card" data-c="Full-stack"><h3>Employee Management System</h3><p class="meta">Mindset IT Solutions</p><p>A full-stack employee management application built with React and Spring Boot. It includes advanced search algorithms that filter large datasets by salary range and other employee attributes.</p><div class="tg"><span>React</span><span>Spring Boot</span></div><details><summary>Highlights</summary><ul><li>Full-stack React and Spring Boot</li><li>Search by salary range and attributes</li><li>Filtering of large datasets</li></ul></details></article>
+  <article class="card" data-c="Full-stack"><h3>Personal Portfolio Website</h3><p class="meta">Hackathon project</p><p>This site: a responsive, single-page portfolio in plain HTML, CSS and JavaScript, with dark and light modes and SEO tags. It was designed and written by prompting AI agents, then deployed on GitHub Pages.</p><div class="tg"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><details><summary>Highlights</summary><ul><li>AI-assisted development</li><li>Dark and light mode, SEO friendly</li><li>Deployed on GitHub Pages</li></ul></details><a href="https://github.com/Rajnishk1/Rajnishk1.github.io">View source</a></article>
+ </div>
+</section>
+
+<section class="sec fi" id="credentials">
+ <h2 class="h">Education and certifications</h2><p class="kick"></p>
+ <div class="grid">
+  <div class="box"><h3>Education</h3><p><b>B.E. in Electronics &amp; Communication Engineering</b></p><p>VTU Belgaum, 2017</p></div>
+  <div class="box"><h3>Certifications</h3><p><b>Oracle Certified Professional, Java SE 11 Developer (1Z0-819)</b></p><p><a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=04A415C4D39DCD6C4AD4795D7E1C5D23074E0DE0080DE0D29579764176479F8B" target="_blank" rel="noopener">Verify on Oracle</a></p><p>Certified Java Programming, W3Docs</p></div>
+ </div>
+</section>
+
+<section class="sec fi" id="ai">
+ <h2 class="h">How this site was built</h2><p class="kick">Built with AI agents instead of hand-written code.</p>
+ <ol class="ai">
   <li><h3>Brief</h3><p>Gave the hackathon requirements to an AI agent.</p><code>Build this project.</code></li>
   <li><h3>Generate</h3><p>The agent designed and coded a responsive page.</p><code>Create a modern, responsive personal website.</code></li>
-  <li><h3>Personalize</h3><p>Fed in my resume so the content is real.</p><code>Take it as input and change the content.</code></li>
+  <li><h3>Personalize</h3><p>Used my resume and a detailed prompt.</p><code>Take it as input and change the content.</code></li>
   <li><h3>Deploy</h3><p>Uploaded to GitHub and turned on Pages.</p><code>Settings, Pages, main, root</code></li>
  </ol>
-</div></section>
+</section>
 
-<section id="contact"><div class="wrap">
- <div class="cta">
-  <div><h3>Let's connect</h3><p>Open to conversations about software engineering, trading systems and AI-assisted development.</p></div>
-  <div><a class="btn p" href="mailto:rajnish151293@gmail.com">Email me</a><a class="btn g" href="https://www.linkedin.com/in/rajnish-kumar-5053561b7/">LinkedIn</a><a class="btn g" href="https://github.com/Rajnishk1">GitHub</a></div>
- </div>
-</div></section>
+<section class="sec fi" id="contact">
+ <h2 class="h">Contact</h2><p class="kick">Open to conversations about software engineering, trading systems and AI-assisted development.</p>
+ <a class="btn p" href="mailto:rajnish151293@gmail.com">Email me</a><button class="btn g" id="copy">Copy email</button><a class="btn g" href="https://www.linkedin.com/in/rajnish-kumar-5053561b7/">LinkedIn</a><a class="btn g" href="https://github.com/Rajnishk1">GitHub</a>
+ <form id="cf">
+  <label>Your name<input name="n" required autocomplete="name"></label>
+  <label>Message<textarea name="m" rows="4" required></textarea></label>
+  <button class="btn p" type="submit">Send in my email app</button>
+  <p class="note">This opens your email app with the message ready to send.</p>
+ </form>
+</section>
 </main>
-<footer><div class="wrap">&copy; 2026 Rajnish Kumar. Built with AI agents, hosted on GitHub Pages.</div></footer>
+<button id="top" aria-label="Back to top">↑</button>
+<footer style="grid-column:2"><p class="q">Building scalable banking, trading and AI-powered applications.</p><p>&copy; 2026 Rajnish Kumar. Built with AI agents, hosted on GitHub Pages.</p></footer>
 
 <script>
-const b=document.getElementById('menu'),l=document.getElementById('links');
-b.onclick=()=>{b.setAttribute('aria-expanded',l.classList.toggle('open'))};
-l.onclick=()=>{l.classList.remove('open');b.setAttribute('aria-expanded','false')};
-const links=[...l.querySelectorAll('a')];
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
-document.querySelectorAll('main section').forEach(s=>io.observe(s));
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],root=document.documentElement;
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+$('#mbtn').onclick=()=>{const o=$('#nav').classList.toggle('open');$('#soc').classList.toggle('open',o);$('#mbtn').setAttribute('aria-expanded',o)};
+$('#nav').onclick=e=>{if(e.target.tagName==='A'){$('#nav').classList.remove('open');$('#soc').classList.remove('open');$('#mbtn').setAttribute('aria-expanded','false')}};
+$('#theme').onclick=()=>{const d=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches,n=d?'light':'dark';root.dataset.theme=n;try{localStorage.setItem('theme',n)}catch(e){}};
+$('#print').onclick=()=>print();
+const links=$$('#nav a');
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+$$('main section').forEach(s=>spy.observe(s));
+const fade=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');fade.unobserve(e.target)}}),{threshold:.1});
+$$('.fi').forEach(s=>fade.observe(s));
+addEventListener('scroll',()=>{const h=root.scrollHeight-innerHeight;$('#bar').style.width=(h>0?scrollY/h*100:0)+'%';$('#top').classList.toggle('show',scrollY>600)},{passive:true});
+$('#top').onclick=()=>scrollTo({top:0});
+function count(el){const to=+el.dataset.to,dec=+(el.dataset.dec||0),pre=el.dataset.pre||'',suf=el.dataset.suf||'',t0=performance.now();
+ (function f(t){const p=Math.min((t-t0)/1400,1);el.textContent=pre+(to*(1-Math.pow(1-p,3))).toFixed(dec)+suf;if(p<1)requestAnimationFrame(f)})(t0)}
+if(!still){const co=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){count(e.target);co.unobserve(e.target)}}),{threshold:.6});$$('.num').forEach(n=>co.observe(n))}
+const roles=['Software Engineer','Java and Spring Boot Developer','Kafka and Microservices Engineer','Trading Systems Engineer','AI-assisted Builder'];
+if(!still){let r=0,c=0,del=false;const el=$('#ty');(function tick(){const w=roles[r];c+=del?-1:1;el.textContent=w.slice(0,c);let ms=del?35:70;if(!del&&c===w.length){del=true;ms=1400}else if(del&&c===0){del=false;r=(r+1)%roles.length;ms=300}setTimeout(tick,ms)})()}
+function tabs(box,items,get,cls){const cats=['All',...new Set(items.map(get))];const wrap=$(box);
+ cats.forEach((c,i)=>{const b=document.createElement('button');b.type='button';b.textContent=c;b.setAttribute('aria-pressed',i===0);b.onclick=()=>{wrap.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));let k=0;items.forEach(it=>{const show=c==='All'||get(it)===c;it.hidden=!show;if(show&&cls){it.classList.remove('pop');void it.offsetWidth;it.style.setProperty('--i',k++);it.classList.add('pop')}})};wrap.appendChild(b)})}
+tabs('#stabs',$$('#chips .chip'),e=>e.dataset.c,true);
+tabs('#ptabs',$$('#pgrid .card'),e=>e.dataset.c,false);
+$('#copy').onclick=async e=>{try{await navigator.clipboard.writeText('rajnish151293@gmail.com');e.target.textContent='Copied'}catch(x){e.target.textContent='rajnish151293@gmail.com'}setTimeout(()=>e.target.textContent='Copy email',2200)};
+$('#cf').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);location.href='mailto:rajnish151293@gmail.com?subject='+encodeURIComponent('Portfolio message from '+f.get('n'))+'&body='+encodeURIComponent(f.get('m'))};
+
+const sw=$$('.sw button');function setAcc(c){root.style.setProperty('--acc',c);sw.forEach(b=>b.setAttribute('aria-pressed',b.dataset.c===c))}
+sw.forEach(b=>b.onclick=()=>{setAcc(b.dataset.c);try{localStorage.setItem('acc',b.dataset.c)}catch(e){}});
+try{const a=localStorage.getItem('acc');if(a)setAcc(a)}catch(e){}
 </script>
 </body>
 </html>
