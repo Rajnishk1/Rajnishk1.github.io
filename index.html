@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rajnish Kumar | Software & DevOps Engineer</title>
+<meta name="description" content="Portfolio of Rajnish Kumar, built entirely with AI agents.">
+<style>
+:root{--bg:#f4f6fb;--surface:#fff;--ink:#121a33;--muted:#58617a;--accent:#2f5bea;--hot:#ff6b3d;--line:#dde2ee;--night:#0e1530;--max:1000px}
+@media(prefers-color-scheme:dark){:root{--bg:#0a1022;--surface:#121b36;--ink:#eaf0ff;--muted:#9ba7c4;--accent:#7b9bff;--line:#243053;--night:#070c1a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font:17px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;text-decoration:none;color:var(--ink);letter-spacing:-.02em}
+nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+nav ul a{display:block;padding:8px 14px;border-radius:8px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+nav ul a:hover,nav ul a.on{color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent)}
+#menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit}
+@media(max-width:760px){#menu{display:block}
+ nav ul{display:none;position:absolute;top:60px;left:0;right:0;flex-direction:column;gap:0;background:var(--surface);border-bottom:1px solid var(--line);padding:8px}
+ nav ul.open{display:flex}}
+.hero{background:var(--night);color:#eaf0ff;padding:84px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,6vw,4rem);line-height:1.05;letter-spacing:-.035em;margin:0 0 18px}
+.hero p{color:#aab6d6;font-size:1.15rem;max-width:46ch;margin:0 0 28px}
+.btn{display:inline-block;padding:12px 24px;border-radius:10px;font-weight:700;text-decoration:none;margin:0 10px 10px 0;border:2px solid transparent;font:inherit;font-weight:700;cursor:pointer}
+.btn.p{background:var(--hot);color:#1a0b05}
+.btn.g{border-color:#4a5a8c;color:#eaf0ff}
+.term{background:#050914;border:1px solid #28345c;border-radius:12px;font:14px/1.7 ui-monospace,Consolas,monospace;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.term .bar{padding:10px 14px;border-bottom:1px solid #28345c;color:#7e8bb0;font-size:12px}
+.term pre{margin:0;padding:16px;min-height:250px;white-space:pre-wrap;color:#cfe0ff}
+.term .u{color:#ffb199}.term .ok{color:#6ee7a8}.term .c{color:#7e8bb0}
+.cursor{display:inline-block;width:8px;height:15px;background:#cfe0ff;vertical-align:-2px;animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero{padding:56px 0}}
+section{padding:68px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h2{font-size:1.9rem;letter-spacing:-.02em;margin:0 0 24px}
+.about{display:grid;grid-template-columns:2fr 1fr;gap:40px}
+.about p{margin:0 0 16px;max-width:62ch}
+.stats{display:grid;gap:14px}
+.stats div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.stats b{display:block;font-size:1.6rem;color:var(--accent)}
+.stats span{color:var(--muted);font-size:14px}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.skills>div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.skills h3{margin:0 0 12px;font-size:1.05rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:14px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column}
+.card h3{margin:0 0 4px}.card small{color:var(--hot);font-weight:700}
+.card p{color:var(--muted);margin:10px 0 16px;flex:1}.card a{font-weight:700}
+.steps{list-style:none;margin:0;padding:0;border-left:3px solid var(--line)}
+.steps li{position:relative;padding:0 0 28px 28px}
+.steps li::before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.steps h3{margin:0 0 4px;font-size:1.1rem}
+.steps p{margin:0 0 8px;color:var(--muted)}
+.steps code{display:block;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font:14px/1.5 ui-monospace,Consolas,monospace}
+form{display:grid;gap:14px;max-width:520px}
+label{font-weight:600;font-size:15px}
+input,textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}
+.links{display:flex;gap:20px;flex-wrap:wrap;margin-top:24px}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cursor{animation:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+ <a class="logo" href="#home">Rajnish Kumar</a>
+ <button id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+ <ul id="links">
+  <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li><li><a href="#process">How it was built</a></li>
+  <li><a href="#contact">Contact</a></li>
+ </ul></nav></div></header>
+
+<main>
+<div class="hero" id="home"><div class="wrap">
+ <div>
+  <h1>I build reliable software, with AI as my pair.</h1>
+  <p>Software and DevOps engineer focused on automation, observability and shipping safely. This whole site was generated by AI agents.</p>
+  <a class="btn p" href="#projects">See my projects</a><a class="btn g" href="#process">How it was built</a>
+ </div>
+ <div class="term" aria-label="Animated example of prompting an AI agent">
+  <div class="bar">ai-agent session</div>
+  <pre id="t"></pre>
+ </div>
+</div></div>
+
+<section id="about"><div class="wrap">
+ <h2>About me</h2>
+ <div class="about">
+  <div>
+   <p>I'm an engineer with experience in CI/CD pipelines, monitoring and release engineering. I turn slow, manual processes into fast, repeatable ones.</p>
+   <p>I'm now applying AI-assisted development to real work: describing the goal, reviewing the output and iterating until it ships.</p>
+  </div>
+  <div class="stats">
+   <div><b>5+ yrs</b><span>Engineering experience (edit me)</span></div>
+   <div><b>20+</b><span>Pipelines automated (edit me)</span></div>
+   <div><b>4</b><span>AI tools used for this site</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <h2>Skills and technologies</h2>
+ <div class="skills">
+  <div><h3>Languages</h3><div class="tags"><span>Python</span><span>Java</span><span>JavaScript</span><span>SQL</span><span>Bash</span></div></div>
+  <div><h3>DevOps</h3><div class="tags"><span>Git</span><span>CI/CD</span><span>Docker</span><span>Kubernetes</span><span>Release automation</span></div></div>
+  <div><h3>Observability</h3><div class="tags"><span>Splunk</span><span>Grafana</span><span>Service discovery</span></div></div>
+  <div><h3>AI-assisted dev</h3><div class="tags"><span>Claude</span><span>Copilot</span><span>Codex</span><span>Opencode</span><span>Prompt design</span></div></div>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <h2>Projects</h2>
+ <div class="projects">
+  <article class="card"><h3>Release dashboard</h3><small>Python, Grafana</small><p>Tracks releases across environments so teams see what shipped, where and when.</p><a href="#">View on GitHub</a></article>
+  <article class="card"><h3>Pipeline templates</h3><small>CI/CD, Docker</small><p>Reusable pipelines that cut setup time for new services.</p><a href="#">View on GitHub</a></article>
+  <article class="card"><h3>This website</h3><small>HTML, CSS, AI agents</small><p>Designed, coded and debugged by prompting. Deployed on GitHub Pages.</p><a href="#">View source</a></article>
+ </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+ <h2>How it was built</h2>
+ <ol class="steps">
+  <li><h3>Brief</h3><p>Pasted the hackathon requirements into the AI agent.</p><code>Build this project.</code></li>
+  <li><h3>Generate</h3><p>The agent planned the design and produced one responsive HTML file.</p><code>Create a modern, responsive personal website for GitHub Pages.</code></li>
+  <li><h3>Improve</h3><p>Asked for a stronger version suitable for presenting.</p><code>Make this a better project I can present.</code></li>
+  <li><h3>Deploy</h3><p>Pushed to a GitHub repo and enabled Pages.</p><code>Settings, Pages, branch main, root folder</code></li>
+ </ol>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <h2>Contact</h2>
+ <p>Have a question or an idea? Send a message or reach me directly.</p>
+ <form action="mailto:you@example.com" method="post" enctype="text/plain">
+  <div><label for="n">Name</label><input id="n" name="name" required></div>
+  <div><label for="e">Email</label><input id="e" name="email" type="email" required></div>
+  <div><label for="m">Message</label><textarea id="m" name="message" rows="4" required></textarea></div>
+  <button class="btn p" type="submit">Send message</button>
+ </form>
+ <div class="links"><a href="mailto:you@example.com">you@example.com</a><a href="https://github.com/Rajnishk1">GitHub</a><a href="https://www.linkedin.com/in/your-username">LinkedIn</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">&copy; 2026 Rajnish Kumar. Built with AI agents, hosted on GitHub Pages.</div></footer>
+
+<script>
+const b=document.getElementById('menu'),l=document.getElementById('links');
+b.onclick=()=>{b.setAttribute('aria-expanded',l.classList.toggle('open'))};
+l.onclick=()=>{l.classList.remove('open');b.setAttribute('aria-expanded','false')};
+const links=[...l.querySelectorAll('a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('main section').forEach(s=>io.observe(s));
+const t=document.getElementById('t');
+const lines=[['u','> Build a professional personal website'],['c','  planning layout, colors, sections...'],['ok','  ✓ index.html generated'],['u','> Make it responsive and fast'],['ok','  ✓ mobile menu added'],['ok','  ✓ no external dependencies'],['u','> Deploy to GitHub Pages'],['ok','  ✓ live']];
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function render(n,c){t.innerHTML=lines.slice(0,n).map(x=>`<span class="${x[0]}">${x[1]}</span>`).join('\n')+(c?'\n<span class="cursor"></span>':'')}
+if(still){render(lines.length,false)}else{let i=0;(function s(){render(++i,true);if(i<lines.length)setTimeout(s,i%3===1?900:600)})()}
+</script>
+</body>
+</html>
